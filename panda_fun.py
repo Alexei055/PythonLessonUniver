@@ -12,16 +12,17 @@ def firs_task():
     print(f"\033[35m{data.duplicated().sum()}\n{'-' * 50}")
 
 
-# firs_task()
+firs_task()
 
 
 def second_task():
-    data = pd.read_csv("visits.csv", sep='\t')
-    plt.boxplot(data)
+    data = pd.read_csv('visits.csv', sep='\t')
+    plt.ylim(-100, 1000)
+    data.boxplot()
     plt.show()
 
 
-# second_task()
+second_task()
 
 
 def third_task():
