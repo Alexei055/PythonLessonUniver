@@ -5,11 +5,12 @@ import numpy as np
 
 def firs_task():
     data = pd.read_csv("YP.csv")
-    print(f"\033[31m{data.head(10)}\n{'-' * 50}\033[32m")
-    print(f"{data.info()}\n{'-' * 50}")
-    print(f"\033[33m{data.columns}\n{'-' * 50}")
-    print(f"\033[34m{data.isna().sum()}\n{'-' * 50}")
-    print(f"\033[35m{data.duplicated().sum()}\n{'-' * 50}")
+    print(f"{data.head(10)}\n{'-' * 50}",
+          f"{data.info()}\n{'-' * 50}",
+          f"{data.columns}\n{'-' * 50}",
+          f"{data.isna().sum()}\n{'-' * 50}",
+          f"{data.duplicated().sum()}\n{'-' * 50}",
+          sep='\n')
 
 
 firs_task()
